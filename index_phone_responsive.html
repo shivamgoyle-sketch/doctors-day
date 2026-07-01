@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Doctor's Day ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+@media (max-width:768px){
+
+html,body{
+margin:0;
+padding:0;
+width:100%;
+overflow-x:hidden;
+}
+
+body{
+min-height:100vh;
+height:auto;
+display:block;
+padding:16px;
+overflow-y:auto;
+background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+}
+
+body::before{
+width:250%;
+height:250%;
+}
+
+.card{
+width:100%;
+max-width:100%;
+margin:0 auto;
+padding:20px 16px;
+border-radius:18px;
+}
+
+.typing{
+font-size:28px;
+line-height:1.3;
+white-space:normal;
+width:100%;
+border-right:none;
+animation:none;
+text-align:center;
+}
+
+.profile{
+display:block;
+width:160px;
+height:160px;
+margin:18px auto;
+}
+
+.photo-text,
+.message,
+.footer{
+text-align:center;
+}
+
+.message{
+font-size:16px;
+line-height:1.8;
+}
+
+.btn{
+display:block;
+width:100%;
+padding:16px;
+text-align:center;
+}
+
+.code{font-size:13px;}
+.footer{font-size:14px;}
+.small{font-size:13px;}
+.ecg{margin-top:24px;}
+svg{max-width:100%;height:auto;}
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}.hearts span{
+    position:fixed;
+    bottom:-50px;
+    color:#ff4d6d;
+    font-size:28px;
+    animation:float 10s linear infinite;
+    opacity:.5;
+}
+
+.hearts span:nth-child(1){left:10%;animation-delay:0s;}
+.hearts span:nth-child(2){left:30%;animation-delay:2s;}
+.hearts span:nth-child(3){left:50%;animation-delay:4s;}
+.hearts span:nth-child(4){left:70%;animation-delay:6s;}
+.hearts span:nth-child(5){left:90%;animation-delay:8s;}
+
+@keyframes float{
+    from{
+        transform:translateY(0) scale(1);
+        opacity:0;
+    }
+    20%{
+        opacity:.7;
+    }
+    to{
+        transform:translateY(-110vh) scale(1.8);
+        opacity:0;
+    }
+}
+
+body{
+    font-family:Poppins,sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+    overflow:hidden;
+}
+.profile{
+    width:230px;
+    height:230px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #fff;
+    padding:6px;
+    background:linear-gradient(135deg,#ff4d6d,#ffb703,#ff4d6d);
+    box-shadow:
+        0 0 25px rgba(255,77,109,.6),
+        0 0 60px rgba(255,77,109,.25);
+    transition:.5s;
+}
+
+.profile:hover{
+    transform:scale(1.05) rotate(2deg);
+}
+/* Animated Background */
+
+body::before{
+    content:"";
+    position:absolute;
+    width:180%;
+    height:180%;
+    background:
+    radial-gradient(circle,#ff4d6d33 2px,transparent 2px);
+    background-size:40px 40px;
+    animation:move 30s linear infinite;
+}
+
+@keyframes move{
+from{transform:translate(0,0);}
+to{transform:translate(-300px,-300px);}
+}
+
+.card{
+
+position:relative;
+width:min(760px,92vw);
+max-width:90%;
+padding:45px;
+border-radius:25px;
+
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:0 20px 60px rgba(0,0,0,.4);
+
+color:white;
+
+z-index:2;
+}
+
+.code{
+font-family:"Fira Code",monospace;
+color:#7dd3fc;
+font-size:15px;
+line-height:1.8;
+}
+
+.typing{
+overflow:hidden;
+white-space:nowrap;
+border-right:3px solid #ff4d6d;
+width:0;
+animation:typing 4s steps(45,end) forwards,
+blink .8s infinite;
+font-size:35px;
+font-weight:700;
+margin:20px 0;
+}
+
+@keyframes typing{
+to{
+width:100%;
+}
+}
+
+@keyframes blink{
+50%{
+border-color:transparent;
+}
+}
+
+.message{
+margin-top:20px;
+font-size:19px;
+line-height:1.9;
+color:#e5e7eb;
+}
+
+.highlight{
+color:#ff6b81;
+font-weight:bold;
+}
+
+.heart{
+display:inline-block;
+animation:beat 1s infinite;
+}
+
+@keyframes beat{
+0%{transform:scale(1);}
+25%{transform:scale(1.3);}
+50%{transform:scale(1);}
+75%{transform:scale(1.25);}
+100%{transform:scale(1);}
+}
+
+.footer{
+margin-top:40px;
+font-family:"Fira Code";
+font-size:16px;
+color:#7dd3fc;
+}
+
+.footer span{
+color:#ff6b81;
+}
+
+.btn{
+margin-top:35px;
+display:inline-block;
+padding:14px 30px;
+border-radius:40px;
+background:#ff4d6d;
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(255,77,109,.5);
+}
+
+.ecg{
+margin-top:35px;
+height:60px;
+overflow:hidden;
+}
+
+.ecg svg{
+width:100%;
+}
+
+.path{
+stroke:#00ff88;
+stroke-width:3;
+fill:none;
+stroke-dasharray:1000;
+stroke-dashoffset:1000;
+animation:draw 5s linear infinite;
+}
+
+@keyframes draw{
+to{
+stroke-dashoffset:0;
+}
+}
+
+.small{
+margin-top:15px;
+color:#cbd5e1;
+font-size:15px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="hearts">
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+    <span>❤</span>
+</div>
+<div class="card">
+
+<div class="code">
+<br>
+
+
+
+
+
+</div>
+
+<div class="typing">
+Happy Doctor's Day, Akshita ❤️
+</div>
+<img src="AKSHITA.jpeg" alt="Akshita" class="profile">
+
+<div class="photo-text">
+    👩‍⚕️ Dr. Akshita
+    <br>
+    <small>Healing the world, one heartbeat at a time ❤️</small>
+</div>
+<div class="message">
+
+You spend your days <span class="highlight">healing hearts</span>,
+while unknowingly you became the reason mine beats faster.
+
+<br><br>
+
+As a <span class="highlight">Developer</span>,
+I spend my time fixing bugs...
+
+But you,
+<span class="highlight">fix lives.</span>
+
+<br><br>
+
+You don't just wear a white coat,
+you wear kindness, patience,
+strength and hope.
+
+<br><br>
+
+Wishing a very Happy Doctor's Day
+
+<br><br>
+
+<span class="heart">❤️</span>
+Thank you for making this world healthier...
+
+
+</div>
+
+<div class="ecg">
+
+<svg viewBox="0 0 800 60">
+
+<path class="path"
+d="M0 30
+L120 30
+L150 30
+L170 10
+L190 50
+L220 5
+L250 30
+L800 30"/>
+
+</svg>
+
+</div>
+
+<div class="footer">
+ <span>"Forever Proud of You ❤️"</span>;
+</div>
+
+
+<a href="#" class="btn">Happy Doctor's Day 🌸</a>
+
+</div>
+
+</body>
+</html>
